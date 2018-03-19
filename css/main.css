@@ -170,7 +170,7 @@ body {
     margin-top: 50vw;
     position: relative;
     padding: 0 0 50px 0;
-/*    margin-bottom: 10vw*/
+    /*    margin-bottom: 10vw*/
 }
 
 .thoughts:before {
@@ -239,30 +239,11 @@ body {
 
 .fb-posts {}
 
-.post {
-    /*    height: 70vh;*/
-    background-color: #1C1D21;
-    width: 90vw;
-    margin: auto;
-    overflow: hidden;
-    padding: 0;
-    margin: 2vw auto;
-    border-radius: 5px;
-    /*    max-height: 20vh;*/
-    /*    text-overflow: ellipsis;*/
-}
 
-.post p {
-    padding: 0% 4% 0 16.5%;
-    margin-top: -6%;
-    text-overflow: ellipsis;
-}
 
-.post p:nth-child(3) {
-    font-size: 2.5vw;
-    padding-top: 3%;
-    margin-bottom: 2%;
-}
+
+
+
 
 .postImg {
     height: 40vw;
@@ -376,9 +357,11 @@ body {
     right: 0;
     margin: auto;
 }
-.blog{
+
+.blog {
     padding-bottom: 5vw
 }
+
 .blog-title {
     padding: 10px;
     background-color: #EEEFF7;
@@ -617,7 +600,8 @@ body {
 .icons {
     font-size: 9vw;
 }
-.icons a{
+
+.icons a {
     text-decoration: none;
     color: white;
 }
@@ -794,15 +778,7 @@ body {
     .blog-post {
         height: 40vh;
     }
-    .post p:nth-child(3) {
-        padding: 2% 4% 0 18%;
-        margin-top: 2%;
-    }
-    .post {
-        /*    height: 70vh;*/
-        background-color: #1C1D21;
-        /*        width: 70vw;*/
-    }
+
     .postImg {
         height: 35vw;
     }
@@ -840,7 +816,7 @@ body {
     }
     .fb-posts {
         order: 13;
-        background-color: #1C1D21;
+/*        background-color: #1C1D21;*/
         height: 100vh;
         overflow-y: scroll;
     }
@@ -854,31 +830,11 @@ body {
         width: 110%;
         height: 50vh;
     }
-    .post {
-        /*        width: 30w*/
-        overflow: hidden;
-        width: 100%;
-        background-color: #EEEFF7;
-        color: #1C1D21;
-    }
+
     .post-head img {
         height: 5vw;
     }
-    .post p {
-        padding: 0% 4% 0 17%;
-        margin-top: -3%;
-        text-overflow: ellipsis;
-        font-size: 1.8vw;
-        /*        width: 90%*/
-    }
 
-    .post p:nth-child(3) {
-        font-size: 1.5vw;
-        padding-top: 0;
-        margin-bottom: 2%;
-        padding-left: 17%;
-
-    }
     .bPost {
         height: 60vw
     }
@@ -892,12 +848,12 @@ body {
         margin: -8vw auto;
         margin-bottom: 30px;
     }
-    .yt h1:after{
+    .yt h1:after {
         bottom: 2vw
     }
     .icons {
-    font-size: 5vw;
-}
+        font-size: 5vw;
+    }
 }
 
 @media(min-width:992px) {
@@ -949,23 +905,7 @@ body {
     .lpage {
         margin-top: 15vw
     }
-    .post {
-        /*        width: 85%;*/
-    }
-    .post p {
-        padding: 0 4% 0 19.5%;
-        margin-top: -8%;
-        text-overflow: ellipsis;
-        font-size: 1.4vw;
-        /*        width: 90%*/
-    }
-    .post p:nth-child(3) {
-        font-size: 1vw;
-        padding-left: 19.5%
-    }
-    .post-head img {
-        height: 4vw;
-    }
+
     .insta-img img {
         width: 100%;
         height: 60vh;
@@ -999,7 +939,8 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    transform: translateY(0)
+    transform: translateY(0);
+    
 }
 
 .link {
@@ -1010,7 +951,7 @@ body {
     position: relative;
     font-size: 7vw;
     line-height: 1;
-/*    color: red;*/
+    /*    color: red;*/
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -1021,7 +962,7 @@ body {
     font-weight: 900;
     overflow: hidden;
     line-height: 0.75;
-/*    color: red;*/
+    /*    color: red;*/
 }
 
 .oq::after {
@@ -1076,36 +1017,68 @@ body {
     100% {
         transform: translateY(-100vh)
     }
-    
+
 }
 
 .reveal {
-/*    animation: reveal 1s 3s linear forwards;*/
+    /*    animation: reveal 1s 3s linear forwards;*/
 }
-.tweets{
+
+.tweets {
     height: 35vh;
     padding: 3vh;
-    
+
 }
-.carousel-inner > .item > blockquote{
-margin:auto;
+
+.carousel-inner > .item > blockquote {
+    margin: auto;
 }
+
 .intro {
-    padding:  10vw 10vw 0 10vw;
+    padding: 10vw 10vw 0 10vw;
 }
-.intro h1{
+
+.intro h1 {
     color: #F36606
 }
-.intro h1{
+
+.intro h1 {
     color: #F36606
-}.intro h1:last-of-type{
+}
+
+.intro h1:last-of-type {
     margin-bottom: 10vh
 }
-.carousel-indicators li{
+
+.carousel-indicators li {
     border-radius: 50%;
     width: 12px;
     height: 12px;
 }
-.carousel-indicators li:hover{
+
+.carousel-indicators li:hover {
     cursor: pointer;
+}
+
+#percent {
+    position: absolute;
+    color: white;
+/*    top: 0;*/
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    font-size: 5vw;
+    text-align: center;
+    
+}
+#percent:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
