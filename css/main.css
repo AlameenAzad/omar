@@ -13,6 +13,29 @@ body {
 .p {
     font-size: 3vw;
 }
+.lpage .icons{
+    position: absolute;
+    left: 2vw;
+    top: 0;
+    bottom: 0;
+    font-size: 4.5vw;
+    
+}
+
+.lpage .icons li{
+    margin: 0;
+    padding: 0;
+}
+.lpage .icons div{
+    margin: 0;
+    padding: 0;
+}
+.lpage .icons div:hover{
+    transform: rotate(20deg) scale(1.2);
+    
+    transition: ease .2s
+    
+}
 
 .headline {
     font-size: 10vw;
@@ -60,6 +83,7 @@ body {
 
 .lpage {
     margin-top: 45vw;
+    position: relative;
 }
 
 .lpage h5 {
@@ -792,7 +816,9 @@ body {
     .bPost {
         height: 80vw
     }
-
+    .lpage .icnos{
+        font-size: 2.5vw;
+    }
 
 
 }
@@ -924,6 +950,9 @@ body {
     .yt h1 {
         margin: -7vw auto;
         margin-bottom: 30px;
+    }
+    .lpage .icons {
+        font-size: 2.5vw;
     }
 
 }
