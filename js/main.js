@@ -1,6 +1,17 @@
-var now = new Date().getTime();
+
+
+$(window).on('load', function() {   
+    
+   
+        $("#load").css({"transform":"translateY(-100vh)", "transition":"all 1s"});
+        document.getElementById("body").setAttribute("style","overflow-y:auto");
+        new WOW().init(); 
+  $("#loader").fadeOut("fast");  //Fade out the #loader div
+    
+});
+$( document ).ready(function() {
+    var now = new Date().getTime();
   var page_load_time = now - performance.timing.navigationStart;
-  console.log("User-perceived page loading time: " + page_load_time);
 var width = 100, // width of a progress bar in percentage
     perfData = window.performance.timing, // The PerformanceTiming interface
     EstimatedTime = -(perfData.loadEventEnd - perfData.navigationStart), // Calculated Estimated Time of Page Load which returns negative value.
@@ -30,13 +41,7 @@ function animateValue(id, start, end, duration) {
         
     }, stepTime);
 }
-
-$(window).on('load', function() {   
     
-    setTimeout(function(){$("#load").css({"transform":"translateY(-100vh)", "transition":"all 1s"}); document.getElementById("body").setAttribute("style","overflow-y:auto"); new WOW().init();}, 2000); 
-  $("#loader").fadeOut("fast");  //Fade out the #loader div
-});
-$( document ).ready(function() {
     $("#calltoaction").on('click', function(){
     $('html, body').animate({
         scrollTop: $('#contact').offset().top -80
