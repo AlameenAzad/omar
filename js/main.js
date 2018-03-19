@@ -8,7 +8,6 @@ $(window).ready( function() {
 $( document ).ready(function() {
     var now = new Date().getTime();
   var page_load_time = now - performance.timing.navigationStart;
-  console.log("User-perceived page loading time: " + page_load_time);
 var width = 100, // width of a progress bar in percentage
     perfData = window.performance.timing, // The PerformanceTiming interface
     EstimatedTime = -(perfData.loadEventEnd - perfData.navigationStart), // Calculated Estimated Time of Page Load which returns negative value.
