@@ -1,16 +1,19 @@
+var now = new Date().getTime();
+  var page_load_time = now - performance.timing.navigationStart;
+  console.log("User-perceived page loading time: " + page_load_time);
 var width = 100, // width of a progress bar in percentage
     perfData = window.performance.timing, // The PerformanceTiming interface
     EstimatedTime = -(perfData.loadEventEnd - perfData.navigationStart), // Calculated Estimated Time of Page Load which returns negative value.
     time = parseInt((EstimatedTime/1000)%60)*100; //Converting EstimatedTime from miliseconds to seconds.
 
-var PercentageID = $("#precent"),
+var PercentageID = $("#percent"),
         start = 0,
         end = 100,
         durataion = time;
         animateValue(PercentageID, start, end, durataion);
 
 function animateValue(id, start, end, duration) {
-
+    
     var range = end - start,
       current = start,
       increment = end > start? 1 : -1,
@@ -24,6 +27,7 @@ function animateValue(id, start, end, duration) {
         if (current == end) {
             clearInterval(timer);
         }
+        
     }, stepTime);
 }
 
