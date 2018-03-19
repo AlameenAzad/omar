@@ -143,9 +143,9 @@ body {
 .self {
     border-radius: 3px;
     padding: 0;
-    height: 50vh;
+    height: 70vh;
     width: 100%;
-    background-image: url(../pic/self.jpg);
+    background-image: url(../pic/i2.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed
